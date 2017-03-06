@@ -286,12 +286,13 @@
 	"bootimage_addr=00100000\0" \
 	"bootimage_size=00500000\0" \
 	"console=ttyS0,115200\0" \
-	"optargs=video=Unknown-1:800x480-32\0" \
+	"videoargs=video=Unknown-1:800x480-32\0" \
 	"nanddev=0\0" \
 	"nandroot=ubi0:rootfs rw\0" \
 	"nandrootfstype=ubifs ubi.mtd=5\0" \
 	"nandargs=setenv bootargs console=${console} " \
 		"${optargs} " \
+		"${videoargs} " \
 		"root=${nandroot} " \
 		"rootfstype=${nandrootfstype}\0" \
 	"loadzimagenand=nand read ${loadaddr} ${bootimage_addr} " \
@@ -304,6 +305,7 @@
 	"mmcrootfstype=ext4 rootwait\0" \
 	"mmcargs=setenv bootargs console=${console} " \
 		"${optargs} " \
+		"${videoargs} " \
 		"root=${mmcroot} " \
 		"rootfstype=${mmcrootfstype}\0" \
 	"bootenv=uEnv.txt\0" \
