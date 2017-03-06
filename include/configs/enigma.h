@@ -113,7 +113,7 @@
 /* SDRAM */
 #define CONFIG_NR_DRAM_BANKS		1
 #define CONFIG_SYS_SDRAM_BASE           ATMEL_BASE_DDRCS
-#define CONFIG_SYS_SDRAM_SIZE		0x10000000
+#define CONFIG_SYS_SDRAM_SIZE		(256<<20)	/* 256MB */
 
 #define CONFIG_SYS_INIT_SP_ADDR \
 	(CONFIG_SYS_SDRAM_BASE + 4 * 1024 - GENERATED_GBL_DATA_SIZE)
@@ -286,6 +286,7 @@
 	"bootimage_addr=00100000\0" \
 	"bootimage_size=00500000\0" \
 	"console=ttyS0,115200\0" \
+	"optargs=video=Unknown-1:800x480-32\0" \
 	"nanddev=0\0" \
 	"nandroot=ubi0:rootfs rw\0" \
 	"nandrootfstype=ubifs ubi.mtd=5\0" \
