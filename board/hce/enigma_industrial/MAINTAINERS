@@ -1,0 +1,7 @@
+ENIGMA_INDUSTRIAL BOARD
+M:	Rodolfo Giometti <giometti@hce-engineering.it>
+S:	Maintained
+F:	board/hce/enigma_industrial/
+F:	include/configs/enigma_industrial.h
+F:	configs/enigma_industrial_mmc_defconfig
+F:	configs/enigma_industrial_nandflash_defconfig

@@ -1,0 +1,12 @@
+if TARGET_ENIGMA_INDUSTRIAL
+
+config SYS_BOARD
+	default "enigma_industrial"
+
+config SYS_VENDOR
+	default "hce"
+
+config SYS_CONFIG_NAME
+	default "enigma_industrial"
+
+endif

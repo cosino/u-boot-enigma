@@ -135,6 +135,11 @@ config TARGET_ARIETTA_G25
 	select CPU_ARM926EJS
 	select SUPPORT_SPL
 
+config TARGET_ENIGMA_INDUSTRIAL
+	bool "HCE Engineering Enigma Industrial board"
+	select CPU_V7
+	select SUPPORT_SPL
+
 endchoice
 
 config SYS_SOC
@@ -168,5 +173,6 @@ source "board/siemens/corvus/Kconfig"
 source "board/siemens/taurus/Kconfig"
 source "board/siemens/smartweb/Kconfig"
 source "board/acmesystems/arietta_g25/Kconfig"
+source "board/hce/enigma_industrial/Kconfig"
 
 endif
